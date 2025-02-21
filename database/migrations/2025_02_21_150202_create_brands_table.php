@@ -13,7 +13,8 @@ return new class extends Migration
     {
         if(!Schema::hasTable('brands')){
             Schema::create('brands', function (Blueprint $table) {
-                $table->id();
+                $table->id('brand_id');
+                $table->string('brand_name');
                 $table->timestamps();
             });
         }

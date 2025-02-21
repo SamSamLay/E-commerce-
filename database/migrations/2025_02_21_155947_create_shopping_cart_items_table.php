@@ -14,8 +14,8 @@ return new class extends Migration
        if(!Schema::hasTable('shopping_cart_items')){
         Schema::create('shopping_cart_items', function (Blueprint $table) {
             $table->id('shopping_cart_item_id');
-            $table->foreignId('shopping_cart_id')->constrained()->onDelete('cascade');
-            $table->foreignId('product_id')->constrained()->onDelete('cascade');
+            $table->foreignId('shopping_cart_id')->constrained('shopping_carts')->onDelete('cascade');
+            $table->foreignId('product_id')->constrained('products')->onDelete('cascade');
             $table->integer('quantity');
             $table->timestamps();
         });

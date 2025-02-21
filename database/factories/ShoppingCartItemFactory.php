@@ -2,6 +2,8 @@
 
 namespace Database\Factories;
 
+use App\Models\ShoppingCart;
+use App\Models\Product;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -17,7 +19,9 @@ class ShoppingCartItemFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'shopping_card_id'=>ShoppingCart::factory(),
+            'product_id'=>Product::factory(),
+            'quantity'=>fake()->numberBetween(1,5),
         ];
     }
 }
