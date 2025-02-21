@@ -11,6 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
+       if(!Schema::hasTable('order_items')){
         Schema::create('order_items', function (Blueprint $table) {
             $table->id('order_item_id');
             $table->foreignId('order_id')->constrained()->onDelete('cascade');
@@ -19,6 +20,7 @@ return new class extends Migration
             $table->decimal('price',10,2);
             $table->timestamps();
         });
+       }
     }
 
     /**

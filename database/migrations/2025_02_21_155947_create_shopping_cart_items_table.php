@@ -11,6 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
+       if(!Schema::hasTable('shopping_cart_items')){
         Schema::create('shopping_cart_items', function (Blueprint $table) {
             $table->id('shopping_cart_item_id');
             $table->foreignId('shopping_cart_id')->constrained()->onDelete('cascade');
@@ -18,6 +19,7 @@ return new class extends Migration
             $table->integer('quantity');
             $table->timestamps();
         });
+       }
     }
 
     /**
