@@ -1,0 +1,2 @@
+git remote add source https://thin_kyu_aung-admin@bitbucket.org/thin_kyu_aung/ecommerce.git
+git push -u -f source master
