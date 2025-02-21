@@ -13,7 +13,7 @@ return new class extends Migration
     {
         if(!Schema::hasTable('shopping_carts')){
             Schema::create('shopping_carts', function (Blueprint $table) {
-                $table->id('shoppping_cart_id');
+                $table->id();
                 $table->foreignId('user_id')->constrained()->onDelete('cascade');
                 $table->timestamps();
             });

@@ -13,10 +13,13 @@ return new class extends Migration
     {
         if(!Schema::hasTable('categories')){
             Schema::create('categories', function (Blueprint $table) {
-                $table->id('category_id');
+                $table->id()->unique();
                 $table->string('category_name');
                 $table->timestamps();
+                
             });
+
+            
         }
     }
 
@@ -26,5 +29,6 @@ return new class extends Migration
     public function down(): void
     {
         Schema::dropIfExists('categories');
+       
     }
 };
