@@ -36,28 +36,28 @@ class DatabaseSeeder extends Seeder
         Product::factory(20)->create();
 
         //Payment
-        User::all()->each(function ($user)){
+        User::all()->each(function ($user){
             Payment::factory()->create(['user_id'=>$user->id]);
-        }
+        });
 
         //Shopping Carts
-        User::all()->each(function ($cart)){
-            ShoppingCart::factory()->create(['shopping_cart_id'=>$cart->id]);
-        }
+        User::all()->each(function ($user){
+            ShoppingCart::factory()->create(['user_id'=>$user->id]);
+        });
 
         //Shopping Carts Items
-        ShoppingCart::all()->each(function ($cart)){
+        ShoppingCart::all()->each(function ($cart){
             ShoppingCartItem::factory()->create(['shopping_cart_id'=>$cart->id]);
-        }
+        });
 
         //Order
-        User::all()->each(function ($user)){
+        User::all()->each(function ($user){
            Order::factory()->create(['user_id'=>$user->id]);
-        }
+        });
 
         //Order Item
-        Order::all()->each(function ($order)){
+        Order::all()->each(function ($order){
             OrderItem::factory()->create(['order_id'=>$order->id]);
-        }
+        });
     }
 }

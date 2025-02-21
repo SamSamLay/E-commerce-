@@ -11,7 +11,28 @@ return new class extends Migration
      */
     public function up(): void
     {
-        if(!Schema::hasTable('products')){
+        Schema::create('categories', function (Blueprint $table) {
+            $table->id()->unique();
+            $table->string('category_name');
+            $table->timestamps();
+            
+        });
+
+        Schema::create('brands', function (Blueprint $table) {
+            $table->id();
+            $table->string('brand_name');
+            $table->timestamps();
+        });
+
+        Schema::create('suppliers', function (Blueprint $table) {
+            $table->id();
+            $table->string('supplier_name');
+            $table->string('supplier_phone');
+            $table->string('supplier_email');
+            $table->timestamps();
+        });
+   
+
             Schema::create('products', function (Blueprint $table) {
                 $table->id();
                 $table->string('product_name');
@@ -24,7 +45,7 @@ return new class extends Migration
 
                
             });
-        }
+        
     }
 
     /**

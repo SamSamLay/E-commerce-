@@ -11,7 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        if(!Schema::hasTable('orders')){
+        Schema::create('payments', function (Blueprint $table) {
+            $table->id();
+            $table->foreignId('user_id')->constrained()->onDelete('cascade');
+            $table->string('payment_type');
+            $table->timestamps();
+        });
+
             Schema::create('orders', function (Blueprint $table) {
                 $table->id();
                 $table->foreignId('user_id')->constrained()->onDelete('cascade');
@@ -21,13 +27,8 @@ return new class extends Migration
                 $table->timestamps();
             });
 
-            Schema::create('payments', function (Blueprint $table) {
-                $table->id();
-                $table->foreignId('user_id')->constrained()->onDelete('cascade');
-                $table->string('payment_type');
-                $table->timestamps();
-            });
-        }
+           
+       
     }
 
     /**

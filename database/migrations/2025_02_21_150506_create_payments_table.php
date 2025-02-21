@@ -11,6 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
+        
         if(!Schema::hasTable('payments')){
             Schema::create('payments', function (Blueprint $table) {
                 $table->id();
@@ -18,7 +19,10 @@ return new class extends Migration
                 $table->string('payment_type');
                 $table->timestamps();
             });
+
         }
+          
+       
     }
 
     /**

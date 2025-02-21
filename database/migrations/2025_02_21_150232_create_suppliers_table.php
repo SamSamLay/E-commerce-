@@ -11,7 +11,8 @@ return new class extends Migration
      */
     public function up(): void
     {
-        if(!Schema::hasTable('suppliers')){
+       
+           if(!Schema::hasTable('suppliers')){
             Schema::create('suppliers', function (Blueprint $table) {
                 $table->id();
                 $table->string('supplier_name');
@@ -19,7 +20,8 @@ return new class extends Migration
                 $table->string('supplier_email');
                 $table->timestamps();
             });
-        }
+       
+           }
     }
 
     /**

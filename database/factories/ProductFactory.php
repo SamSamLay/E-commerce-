@@ -22,7 +22,7 @@ class ProductFactory extends Factory
         return [
             'product_name'=>fake()->word(),
             'description'=>fake()->sentence(),
-            'price'=>fake()=>randomFloat(2,5,100),
+            'price'=>fake()->randomFloat(2,5,100),
             'category_id'=>Category::factory(),
             'brand_id'=>Brand::factory(),
             'supplier_id'=>Supplier::factory(),
