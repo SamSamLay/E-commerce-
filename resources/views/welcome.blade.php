@@ -8,6 +8,9 @@
     @vite(['resources/css/app.css'])
 </head>
 <body class="bg-gray-100">
+<div class="bg-[url(./images/EDKA_website_cover.png)]">
+
+</div>
 <div class="flex justify-between items-center px-8 py-6 bg-white shadow-md w-full">
   <div class="navbar-start">
     <div class="dropdown">
@@ -64,9 +67,7 @@
   </div>
 </div>
 
-<div class="bg-[url(https://img.daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.webp)]">
-  hello
-</div>
+
 
 
 {{-- -carousel photo --}}
