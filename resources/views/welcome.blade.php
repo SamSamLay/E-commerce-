@@ -114,15 +114,16 @@ Browse The Range
   <div class="mx-auto max-w-screen-xl px-4 2xl:px-0">
       <div class="mb-4 grid gap-4 sm:grid-cols-2 md:mb-8 lg:grid-cols-3 xl:grid-cols-4">
       {{--Product--}}
-      <div class="bg-white rounded-lg shadow-md overflow-hidden h-80">
+      <div class="bg-white rounded-lg shadow-md overflow-hidden h-96">
             <div class="relative">
-                <img src="./images/syltherine.png" alt="Product Image" class="w-full h-106">
+                <img src="./images/syltherine.png" alt="Product Image" class="w-full h-72 object-cover">
             </div>
             <div class="p-4">
-                <h3 class="text-lg font-semibold">Respira</h3>
-                <p class="text-gray-500 text-sm">Classic wooden chair</p>
+                <h3 class="text-lg font-semibold">Syltherine</h3>
+                <p class="text-gray-500 text-sm">Stylish cafe chair</p>
                 <div class="flex items-center gap-2">
-                    <span class="text-gray-900 font-bold">Rp 3.000.000</span>
+                    <span class="text-gray-900 font-bold">Rp 2.500.000</span>
+                    <span class="text-gray-500 text-sm">Rp 2.500.000</span>
                 </div>
             </div>
         </div>
@@ -130,21 +131,7 @@ Browse The Range
          {{--Product--}}
       <div class="bg-white rounded-lg shadow-md overflow-hidden h-80">
             <div class="relative">
-                <img src="./images/laviosa.png" alt="Product Image" class="w-full h-86">
-            </div>
-            <div class="p-4">
-                <h3 class="text-lg font-semibold">Respira</h3>
-                <p class="text-gray-500 text-sm">Classic wooden chair</p>
-                <div class="flex items-center gap-2">
-                    <span class="text-gray-900 font-bold">Rp 3.000.000</span>
-                </div>
-            </div>
-        </div>
-         {{--Product--}}
-         {{--Product--}}
-      <div class="bg-white rounded-lg shadow-md overflow-hidden h-80">
-            <div class="relative">
-                <img src="./images/lolito.png" alt="Product Image" class="w-full h-86">
+                <img src="./images/respira.png" alt="Product Image" class="w-full h-86">
             </div>
             <div class="p-4">
                 <h3 class="text-lg font-semibold">Respira</h3>
@@ -172,7 +159,7 @@ Browse The Range
          {{--Product--}}
       <div class="bg-white rounded-lg shadow-md overflow-hidden h-80">
             <div class="relative">
-                <img src="./images/grifo.png" alt="Product Image" class="w-full h-86">
+                <img src="./images/respira.png" alt="Product Image" class="w-full h-86">
             </div>
             <div class="p-4">
                 <h3 class="text-lg font-semibold">Respira</h3>
@@ -186,7 +173,7 @@ Browse The Range
          {{--Product--}}
       <div class="bg-white rounded-lg shadow-md overflow-hidden h-80">
             <div class="relative">
-                <img src="./images/muggo.png" alt="Product Image" class="w-full h-86">
+                <img src="./images/respira.png" alt="Product Image" class="w-full h-86">
             </div>
             <div class="p-4">
                 <h3 class="text-lg font-semibold">Respira</h3>
@@ -200,7 +187,7 @@ Browse The Range
          {{--Product--}}
       <div class="bg-white rounded-lg shadow-md overflow-hidden h-80">
             <div class="relative">
-                <img src="./images/pingky.png" alt="Product Image" class="w-full h-86">
+                <img src="./images/respira.png" alt="Product Image" class="w-full h-86">
             </div>
             <div class="p-4">
                 <h3 class="text-lg font-semibold">Respira</h3>
@@ -214,7 +201,21 @@ Browse The Range
          {{--Product--}}
       <div class="bg-white rounded-lg shadow-md overflow-hidden h-80">
             <div class="relative">
-                <img src="./images/potty.png" alt="Product Image" class="w-full h-86">
+                <img src="./images/respira.png" alt="Product Image" class="w-full h-86">
+            </div>
+            <div class="p-4">
+                <h3 class="text-lg font-semibold">Respira</h3>
+                <p class="text-gray-500 text-sm">Classic wooden chair</p>
+                <div class="flex items-center gap-2">
+                    <span class="text-gray-900 font-bold">Rp 3.000.000</span>
+                </div>
+            </div>
+        </div>
+         {{--Product--}}
+         {{--Product--}}
+      <div class="bg-white rounded-lg shadow-md overflow-hidden h-80">
+            <div class="relative">
+                <img src="./images/respira.png" alt="Product Image" class="w-full h-86">
             </div>
             <div class="p-4">
                 <h3 class="text-lg font-semibold">Respira</h3>
