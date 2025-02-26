@@ -17,6 +17,9 @@ Route::get('/payment', function () {
 Route::get('/shipping', function () {
     return view('shipping');
 });
+Route::get('/product', function () {
+    return view('product');
+});
 
 
 
