@@ -123,109 +123,108 @@ Browse The Range
                 <p class="text-gray-500 text-sm">Stylish cafe chair</p>
                 <div class="flex items-center gap-2">
                     <span class="text-gray-900 font-bold">Rp 2.500.000</span>
-                    <span class="text-gray-500 text-sm">Rp 2.500.000</span>
+                    <span class="text-gray-500 text-sm">Rp 3.500.000</span>
                 </div>
             </div>
         </div>
          {{--Product--}}
          {{--Product--}}
-      <div class="bg-white rounded-lg shadow-md overflow-hidden h-80">
+         <div class="bg-white rounded-lg shadow-md overflow-hidden h-96">
             <div class="relative">
-                <img src="./images/respira.png" alt="Product Image" class="w-full h-86">
+                <img src="./images/laviosa.png" alt="Product Image" class="w-full h-72 object-cover">
+            </div>
+            <div class="p-4">
+                <h3 class="text-lg font-semibold">Leviosa</h3>
+                <p class="text-gray-500 text-sm">Stylish cafe chair</p>
+                <div class="flex items-center gap-2">
+                    <span class="text-gray-900 font-bold">Rp 2.500.000</span>
+                    
+                </div>
+            </div>
+        </div>
+         {{--Product--}}
+         {{--Product--}}
+         <div class="bg-white rounded-lg shadow-md overflow-hidden h-96">
+            <div class="relative">
+                <img src="./images/lolito.png" alt="Product Image" class="w-full h-72 object-cover">
+            </div>
+            <div class="p-4">
+                <h3 class="text-lg font-semibold">Lolito</h3>
+                <p class="text-gray-500 text-sm">Luxury big sofa</p>
+                <div class="flex items-center gap-2">
+                    <span class="text-gray-900 font-bold">Rp 7.000.000</span>
+                    <span class="text-gray-500 text-sm">Rp 14.000.000</span>
+                </div>
+            </div>
+        </div>
+         {{--Product--}}
+         {{--Product--}}
+         <div class="bg-white rounded-lg shadow-md overflow-hidden h-96">
+            <div class="relative">
+                <img src="./images/respira.jpeg" alt="Product Image" class="w-full h-72 object-cover">
             </div>
             <div class="p-4">
                 <h3 class="text-lg font-semibold">Respira</h3>
-                <p class="text-gray-500 text-sm">Classic wooden chair</p>
+                <p class="text-gray-500 text-sm">Outdoor bar table and stool</p>
                 <div class="flex items-center gap-2">
-                    <span class="text-gray-900 font-bold">Rp 3.000.000</span>
+                    <span class="text-gray-900 font-bold">Rp 500.000</span>
+                    <span class="text-gray-500 text-sm">Rp 14.000.000</span>
                 </div>
             </div>
         </div>
          {{--Product--}}
-         {{--Product--}}
-      <div class="bg-white rounded-lg shadow-md overflow-hidden h-80">
+         <div class="bg-white rounded-lg shadow-md overflow-hidden h-96">
             <div class="relative">
-                <img src="./images/respira.png" alt="Product Image" class="w-full h-86">
+                <img src="./images/grifo.png" alt="Product Image" class="w-full h-72 object-cover">
             </div>
             <div class="p-4">
-                <h3 class="text-lg font-semibold">Respira</h3>
-                <p class="text-gray-500 text-sm">Classic wooden chair</p>
+                <h3 class="text-lg font-semibold">Grifo</h3>
+                <p class="text-gray-500 text-sm">Night lamp</p>
                 <div class="flex items-center gap-2">
-                    <span class="text-gray-900 font-bold">Rp 3.000.000</span>
+                    <span class="text-gray-900 font-bold">Rp 1.500.000</span>
+                    
                 </div>
             </div>
         </div>
-         {{--Product--}}
-         {{--Product--}}
-      <div class="bg-white rounded-lg shadow-md overflow-hidden h-80">
+        <div class="bg-white rounded-lg shadow-md overflow-hidden h-96">
             <div class="relative">
-                <img src="./images/respira.png" alt="Product Image" class="w-full h-86">
+                <img src="./images/muggo.png" alt="Product Image" class="w-full h-72 object-cover">
             </div>
             <div class="p-4">
-                <h3 class="text-lg font-semibold">Respira</h3>
-                <p class="text-gray-500 text-sm">Classic wooden chair</p>
+                <h3 class="text-lg font-semibold">Muggo</h3>
+                <p class="text-gray-500 text-sm">Small mug</p>
                 <div class="flex items-center gap-2">
-                    <span class="text-gray-900 font-bold">Rp 3.000.000</span>
+                    <span class="text-gray-900 font-bold">Rp 150.000</span>
+                 
                 </div>
             </div>
         </div>
-         {{--Product--}}
-         {{--Product--}}
-      <div class="bg-white rounded-lg shadow-md overflow-hidden h-80">
+        <div class="bg-white rounded-lg shadow-md overflow-hidden h-96">
             <div class="relative">
-                <img src="./images/respira.png" alt="Product Image" class="w-full h-86">
+                <img src="./images/pingky.jpeg" alt="Product Image" class="w-full h-72 object-cover">
             </div>
             <div class="p-4">
-                <h3 class="text-lg font-semibold">Respira</h3>
-                <p class="text-gray-500 text-sm">Classic wooden chair</p>
+                <h3 class="text-lg font-semibold">Pingky</h3>
+                <p class="text-gray-500 text-sm">Cute bed set</p>
                 <div class="flex items-center gap-2">
-                    <span class="text-gray-900 font-bold">Rp 3.000.000</span>
+                    <span class="text-gray-900 font-bold">Rp 7.000.000</span>
+                    <span class="text-gray-500 text-sm">Rp 14.000.000</span>
                 </div>
             </div>
         </div>
-         {{--Product--}}
-         {{--Product--}}
-      <div class="bg-white rounded-lg shadow-md overflow-hidden h-80">
+        <div class="bg-white rounded-lg shadow-md overflow-hidden h-96">
             <div class="relative">
-                <img src="./images/respira.png" alt="Product Image" class="w-full h-86">
+                <img src="./images/potty.jpeg" alt="Product Image" class="w-full h-72 object-cover">
             </div>
             <div class="p-4">
-                <h3 class="text-lg font-semibold">Respira</h3>
-                <p class="text-gray-500 text-sm">Classic wooden chair</p>
+                <h3 class="text-lg font-semibold">Potty</h3>
+                <p class="text-gray-500 text-sm">Minimalist flower</p>
                 <div class="flex items-center gap-2">
-                    <span class="text-gray-900 font-bold">Rp 3.000.000</span>
+                    <span class="text-gray-900 font-bold">Rp 500.000</span>
+                    
                 </div>
             </div>
         </div>
-         {{--Product--}}
-         {{--Product--}}
-      <div class="bg-white rounded-lg shadow-md overflow-hidden h-80">
-            <div class="relative">
-                <img src="./images/respira.png" alt="Product Image" class="w-full h-86">
-            </div>
-            <div class="p-4">
-                <h3 class="text-lg font-semibold">Respira</h3>
-                <p class="text-gray-500 text-sm">Classic wooden chair</p>
-                <div class="flex items-center gap-2">
-                    <span class="text-gray-900 font-bold">Rp 3.000.000</span>
-                </div>
-            </div>
-        </div>
-         {{--Product--}}
-         {{--Product--}}
-      <div class="bg-white rounded-lg shadow-md overflow-hidden h-80">
-            <div class="relative">
-                <img src="./images/respira.png" alt="Product Image" class="w-full h-86">
-            </div>
-            <div class="p-4">
-                <h3 class="text-lg font-semibold">Respira</h3>
-                <p class="text-gray-500 text-sm">Classic wooden chair</p>
-                <div class="flex items-center gap-2">
-                    <span class="text-gray-900 font-bold">Rp 3.000.000</span>
-                </div>
-            </div>
-        </div>
-         {{--Product--}}
          <div>
       </div>
     </div>
