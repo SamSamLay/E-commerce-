@@ -1,0 +1,9 @@
+git remote add source https://thin_kyu_aung-admin@bitbucket.org/thin_kyu_aung/ecommerce.git
+git push -u -f source master
+
+ git remote add origin https://github.com/SamSamLay/E-commerce-.git
+ git push -u origin main
+
+ before commit use add.
+ 
+

@@ -122,21 +122,21 @@
         <div id="image-placeholder" class="absolute inset-0 bg-gray-500 animate-pulse rounded-lg"></div>
 
         <!-- ✅ Enlarged Main Image (Carousel) -->
-        <img id="mainImage" src="img/Meryl_chair_1.jpeg" alt="Meryl Lounge Chair"
+        <img id="mainImage" src="./images/Meryl_chair_1.jpeg" alt="Meryl Lounge Chair"
             class="rounded-lg shadow-lg w-full opacity-0 transition-opacity duration-500" onload="removePlaceholder()">
     </div>
 
     <!-- ✅ Enlarged Image Thumbnails with Proper Spacing & Border -->
     <div class="flex space-x-6 mt-4">
-        <img src="img/Meryl_chair_1.jpeg" alt="Thumbnail 1" class="w-28 h-28 object-cover rounded-md cursor-pointer border-4 border-gray-300 hover:border-gray-500"
+        <img src="./images/Meryl_chair_1.jpeg" alt="Thumbnail 1" class="w-28 h-28 object-cover rounded-md cursor-pointer border-4 border-gray-300 hover:border-gray-500"
             onclick="updateMainImage(0, this)" id="thumb-0">
-        <img src="img/Meryl_chair_2.jpeg" alt="Thumbnail 2" class="w-28 h-28 object-cover rounded-md cursor-pointer border-4 border-gray-300 hover:border-gray-500"
+        <img src="./images/Meryl_chair_2.jpeg" alt="Thumbnail 2" class="w-28 h-28 object-cover rounded-md cursor-pointer border-4 border-gray-300 hover:border-gray-500"
             onclick="updateMainImage(1, this)" id="thumb-1">
-        <img src="img/Meryl_chair_3.jpeg" alt="Thumbnail 3" class="w-28 h-2284 object-cover rounded-md cursor-pointer border-4 border-gray-300 hover:border-gray-500"
+        <img src="./images//Meryl_chair_3.jpeg" alt="Thumbnail 3" class="w-28 h-2284 object-cover rounded-md cursor-pointer border-4 border-gray-300 hover:border-gray-500"
             onclick="updateMainImage(2, this)" id="thumb-2">
-        <img src="img/Meryl_chair_4.jpeg" alt="Thumbnail 4" class="w-28 h-28 object-cover rounded-md cursor-pointer border-4 border-gray-300 hover:border-gray-500"
+        <img src="./images/Meryl_chair_4.jpeg" alt="Thumbnail 4" class="w-28 h-28 object-cover rounded-md cursor-pointer border-4 border-gray-300 hover:border-gray-500"
             onclick="updateMainImage(3, this)" id="thumb-3">
-        <img src="img/Meryl_chair_5.png" alt="Thumbnail 5" class="w-28 h-28 object-cover rounded-md cursor-pointer border-4 border-gray-300 hover:border-gray-500"
+        <img src="./images/Meryl_chair_5.png" alt="Thumbnail 5" class="w-28 h-28 object-cover rounded-md cursor-pointer border-4 border-gray-300 hover:border-gray-500"
             onclick="updateMainImage(4, this)" id="thumb-4">
     </div>
 </div>
@@ -146,11 +146,11 @@
 <!-- ✅ JavaScript for Carousel Controls & Placeholder Effect on Thumbnails -->
 <script>
     const images = [
-        "img/Meryl_chair_1.jpeg",
-        "img/Meryl_chair_2.jpeg",
-        "img/Meryl_chair_3.jpeg",
-        "img/Meryl_chair_4.jpeg",
-        "img/Meryl_chair_5.png"
+        "./images/Meryl_chair_1.jpeg",
+        "./images/Meryl_chair_2.jpeg",
+        "./images/Meryl_chair_3.jpeg",
+        "./images/Meryl_chair_4.jpeg",
+        "./images/Meryl_chair_5.png"
     ];
     let currentImageIndex = 0;
 

@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('cart2');
+    return view('welcome');
 });
 Route::get('/cart', function () {
     return view('cart');
