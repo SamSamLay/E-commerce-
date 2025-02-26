@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     @vite(['resources/css/app.css'])
 </head>
-<body class="bg-gray-100">
+<body class="">
 <div class="flex justify-between items-center px-8 py-6 bg-white shadow-md w-full">
   <div class="navbar-start">
     <div class="dropdown">
@@ -41,8 +41,8 @@
           <path
             stroke-linecap="round"
             stroke-linejoin="round"
-            stroke-width="2"
-            d="M4 6h16M4 12h16m-7 6h7" />
+            stroke-width="0.8"
+            d="M4 6h16v2H4V6zm2 5h12v2H6v-2zm-2 5h16v2H4v-2z" />
         </svg>
       
     </button>
@@ -63,6 +63,28 @@
         <span class="badge badge-xs badge-primary indicator-item"></span>
       </div>
     </button>
+
+    <button class="btn btn-ghost btn-circle">
+      <div class="indicator">
+      <svg
+            stroke-dashoffset:0;
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5 scale-x-[-1]"
+            fill="none"
+            viewBox="0 0 24 24"
+           
+            stroke="currentColor">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+          </svg>
+        
+        <span class="badge badge-xs badge-primary indicator-item"></span>
+      </div>
+    </button>
+    
   </div>
 </div>
 
@@ -74,7 +96,7 @@
         Discover Our <br>New Collection
       </h2>
       <p class="text-slate-600 leading-normal font-light">
-        The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to Naviglio where you can enjoy the main night life in Barcelona.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.
       </p>
       <br>
       <button type="button" class="focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
@@ -91,27 +113,27 @@ Browse The Range
 <p class="text-xl text-center">Lorem ipsum dolor sit amet, .</p><br><br>
 
 {{-- -carousel photo --}}
-<div class="grid grid-cols-3 gap-4 p-4 w-full h-auto">
+<div class="grid grid-cols-3 gap-4 p-4 w-full h-96">
     <div class="w-full h-full">
         <img src="./images/dining.png"
             alt="Burger" class="w-full h-auto object-contain rounded-xl shadow-lg" />
-            <p class="text-xl text-center">Dining</p>
+            <br><p class="text-xl text-center">Dining</p>
     </div>
     <div class="w-full h-full">
         <img src="./images/living.png"
             alt="Burger" class="w-full h-auto object-contain rounded-xl shadow-lg" />
-            <p class="text-xl text-center">Living</p>
+            <br><p class="text-xl text-center">Living</p>
     </div>
     <div class="w-full h-full">
         <img src="./images/bedroom.png"
             alt="Burger" class="w-full h-auto object-contain rounded-xl shadow-lg" />
-            <p class="text-xl text-center">Bedroom</p>
+            <br><p class="text-xl text-center">Bedroom</p>
     </div>
 </div>
 
 
     {{--Product--}}
-    <section class="bg-gray-50 py-8 antialiased dark:bg-gray-900 md:py-12">
+    <section class=" py-8 antialiased dark:bg-gray-900 md:py-12">
     <h2 class="mb-2 text-xl font-semibold text-center">
 Our Products
       </h2><br>
@@ -252,5 +274,6 @@ Our Products
     </div>
   </form>
 </section>
+<button type="button" class="text-black bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-teal-300 dark:focus:ring-teal-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Teal</button>
 </body>
 </html>
