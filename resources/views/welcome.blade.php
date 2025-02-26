@@ -121,6 +121,9 @@ Our Products
       <div class="bg-white rounded-lg shadow-md overflow-hidden h-96">
             <div class="relative">
                 <img src="./images/syltherine.png" alt="Product Image" class="w-full h-72 object-cover">
+                <div class="absolute top-2 right-2 bg-red-500 text-white text-sm font-bold w-12 h-12 flex items-center justify-center rounded-full">
+                    -30%
+                </div>
             </div>
             <div class="p-4">
                 <h3 class="text-lg font-semibold">Syltherine</h3>
@@ -151,6 +154,9 @@ Our Products
          <div class="bg-white rounded-lg shadow-md overflow-hidden h-96">
             <div class="relative">
                 <img src="./images/lolito.png" alt="Product Image" class="w-full h-72 object-cover">
+                <div class="absolute top-2 right-2 bg-red-500 text-white text-sm font-bold w-12 h-12 flex items-center justify-center rounded-full">
+                    -50%
+                </div>
             </div>
             <div class="p-4">
                 <h3 class="text-lg font-semibold">Lolito</h3>
@@ -166,6 +172,9 @@ Our Products
          <div class="bg-white rounded-lg shadow-md overflow-hidden h-96">
             <div class="relative">
                 <img src="./images/respira.jpeg" alt="Product Image" class="w-full h-72 object-cover">
+                <div class="absolute top-2 right-2 bg-teal-500 text-white text-sm font-bold w-12 h-12 flex items-center justify-center rounded-full">
+                    New
+                </div>
             </div>
             <div class="p-4">
                 <h3 class="text-lg font-semibold">Respira</h3>
@@ -193,6 +202,9 @@ Our Products
         <div class="bg-white rounded-lg shadow-md overflow-hidden h-96">
             <div class="relative">
                 <img src="./images/muggo.png" alt="Product Image" class="w-full h-72 object-cover">
+                <div class="absolute top-2 right-2 bg-teal-500 text-white text-sm font-bold w-12 h-12 flex items-center justify-center rounded-full">
+                    New
+                </div>
             </div>
             <div class="p-4">
                 <h3 class="text-lg font-semibold">Muggo</h3>
@@ -206,6 +218,9 @@ Our Products
         <div class="bg-white rounded-lg shadow-md overflow-hidden h-96">
             <div class="relative">
                 <img src="./images/pingky.jpeg" alt="Product Image" class="w-full h-72 object-cover">
+                <div class="absolute top-2 right-2 bg-red-500 text-white text-sm font-bold w-12 h-12 flex items-center justify-center rounded-full">
+                    -50%
+                </div>
             </div>
             <div class="p-4">
                 <h3 class="text-lg font-semibold">Pingky</h3>
@@ -219,6 +234,9 @@ Our Products
         <div class="bg-white rounded-lg shadow-md overflow-hidden h-96">
             <div class="relative">
                 <img src="./images/potty.jpeg" alt="Product Image" class="w-full h-72 object-cover">
+                <div class="absolute top-2 right-2 bg-teal-500 text-white text-sm font-bold w-12 h-12 flex items-center justify-center rounded-full">
+                    New
+                </div>
             </div>
             <div class="p-4">
                 <h3 class="text-lg font-semibold">Potty</h3>
