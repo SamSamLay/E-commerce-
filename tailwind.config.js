@@ -7,7 +7,7 @@ export default {
     theme: {
         extend: {},
     },
-    plugins: [require("daisyui")],
+    plugins: [],
 };
 
 tailwind.config = {
@@ -55,4 +55,17 @@ tailwind.config = {
     ]
       }
     }
+  }
+
+  module.exports = {
+    content: [
+        "./resources/**/*.blade.php",
+        "./resources/**/*.js",
+        "./resources/**/*.vue",
+    ],
+    theme: {
+        extend: {},
+    },
+    plugins: [],
+
   }
