@@ -143,11 +143,12 @@ Our Products
       <div class="mb-4 grid gap-4 sm:grid-cols-2 md:mb-8 lg:grid-cols-3 xl:grid-cols-4">
       {{--Product--}}
       <div class="bg-white rounded-lg shadow-md overflow-hidden h-96">
-            <div class="relative">
+            <div class="relative container">
                 <img src="./images/syltherine.png" alt="Product Image" class="w-full h-72 object-cover">
                 <div class="absolute top-2 right-2 bg-red-500 text-white text-sm font-bold w-12 h-12 flex items-center justify-center rounded-full">
                     -30%
                 </div>
+                <button class="btn border-2 text-green-500 bg-white border-green-500 px-8 py-1">Add to cart</button>
             </div>
             <div class="p-4">
                 <h3 class="text-lg font-semibold">Syltherine</h3>
