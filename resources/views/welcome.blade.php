@@ -91,7 +91,7 @@ Browse The Range
 <p class="text-xl text-center">Lorem ipsum dolor sit amet, .</p><br><br>
 
 {{-- -carousel photo --}}
-<div class="grid grid-cols-3 gap-4 p-4 w-full h-screen">
+<div class="grid grid-cols-3 gap-4 p-4 w-full h-auto">
     <div class="w-full h-full">
         <img src="./images/dining.png"
             alt="Burger" class="w-full h-auto object-contain rounded-xl shadow-lg" />
@@ -109,8 +109,12 @@ Browse The Range
     </div>
 </div>
 
+
     {{--Product--}}
     <section class="bg-gray-50 py-8 antialiased dark:bg-gray-900 md:py-12">
+    <h2 class="mb-2 text-xl font-semibold text-center">
+Our Products
+      </h2><br>
   <div class="mx-auto max-w-screen-xl px-4 2xl:px-0">
       <div class="mb-4 grid gap-4 sm:grid-cols-2 md:mb-8 lg:grid-cols-3 xl:grid-cols-4">
       {{--Product--}}
