@@ -41,9 +41,11 @@
     <div class="left-[248px] top-[50px] absolute text-[#17183b] text-base font-semibold font-['Proxima Nova'] leading-tight tracking-tight">Gunnared biege</div>
     <div class="left-[196px] top-[50px] absolute text-[#a2a3b1] text-base font-semibold font-['Proxima Nova'] leading-tight tracking-tight">Color</div>
     <div class="left-[196px] top-[10px] absolute text-[#17183b] text-xl font-semibold font-['Proxima Nova'] leading-normal">Osmond Armchair</div>
-    <img class="w-40 h-40 left-0 top-0 absolute mix-blend-darken" src="https://placehold.co/160x160" />
+    <img class="w-40 h-40 left-0 top-0 absolute mix-blend-darken" src="./images/chair1.png" />
   </div>
+
   <div class="w-[820px] h-px left-[80px] top-[449px] absolute bg-[#d1d1d8]"></div>
+  
   <div class="w-[820px] h-40 left-[80px] top-[482px] absolute">
     <div class="h-5 left-[384px] top-[114px] absolute rounded justify-center items-center gap-4 inline-flex">
       <div class="text-[#e14b4b] text-base font-semibold font-['Proxima Nova'] leading-tight tracking-tight">Remove</div>
@@ -66,7 +68,7 @@
     <div class="left-[248px] top-[50px] absolute text-[#17183b] text-base font-semibold font-['Proxima Nova'] leading-tight tracking-tight">Lysed bright green</div>
     <div class="left-[196px] top-[50px] absolute text-[#a2a3b1] text-base font-semibold font-['Proxima Nova'] leading-tight tracking-tight">Color</div>
     <div class="left-[196px] top-[10px] absolute text-[#17183b] text-xl font-semibold font-['Proxima Nova'] leading-normal">Meryl Lounge Chair</div>
-    <img class="w-40 h-40 left-0 top-0 absolute mix-blend-darken" src="https://placehold.co/160x160" />
+    <img class="w-40 h-40 left-0 top-0 absolute mix-blend-darken" src="./images/chair2.png" />
   </div>
   <div class="left-[80px] top-[153px] absolute text-[#17183b] text-[32px] font-bold font-['Proxima Nova'] leading-[44px]">Cart</div>
   <div class="left-[166px] top-[167px] absolute text-[#a2a3b1] text-xl font-semibold font-['Proxima Nova'] leading-normal">2 ITEMS</div>

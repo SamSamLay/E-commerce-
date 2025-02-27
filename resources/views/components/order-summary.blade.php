@@ -18,7 +18,9 @@
         <div class="text-[#17183b] text-base font-normal font-['Proxima Nova'] leading-normal">$0.00</div>
       </div>
     </div>
+
     <div class="w-[316px] h-px bg-[#d1d1d8]"></div>
+    
     <div class="self-stretch h-[228px] flex-col justify-start items-start gap-6 flex">
       <div class="self-stretch justify-start items-start gap-[206px] inline-flex">
         <div class="text-[#17183b] text-base font-normal font-['Proxima Nova'] leading-normal">TOTAL</div>
@@ -28,6 +30,8 @@
         <div class="text-[#17183b] text-base font-normal font-['Proxima Nova'] leading-normal">Estimated Delivery by</div>
         <div class="text-[#17183b] text-base font-semibold font-['Proxima Nova'] leading-tight tracking-tight">01 Feb, 2023</div>
       </div>
+      
+      <!-- change this into input box -->
       <div class="self-stretch p-4 rounded-sm border border-[#d1d1d8] justify-start items-center gap-4 inline-flex">
         <div class="grow shrink basis-0 text-[#a2a3b1] text-base font-normal font-['Proxima Nova'] leading-normal">Coupon Code</div>
         <div data-svg-wrapper class="relative">
@@ -37,6 +41,8 @@
         </svg>
         </div>
       </div>
+
+      <!-- change this into button -->
       <div class="self-stretch h-[52px] px-10 py-[18px] bg-[#3aa29f] rounded justify-center items-center gap-4 inline-flex">
         <div class="text-white text-base font-semibold font-['Proxima Nova'] leading-tight tracking-tight">Proceed to Checkout</div>
       </div>
