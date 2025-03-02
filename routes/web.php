@@ -20,6 +20,9 @@ Route::get('/shipping', function () {
 Route::get('/product', function () {
     return view('product');
 });
+Route::get('/navbar', function () {
+    return view('components.navbar');
+});
 
 
 
