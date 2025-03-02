@@ -38,7 +38,7 @@
 <body class="">
 <div class="flex justify-between items-center px-8 py-6 bg-white shadow-md w-full">
   <div class="navbar-start">
-    <div class="dropdown">
+    <div class="dropdown  mb-5">
       <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
       <a class="btn btn-ghost text-xl">Cozy<span class="text-xl">&reg;</span></a>
       
@@ -46,6 +46,7 @@
       
     </div>
   </div>
+  
   <div class="navbar-center md:flex absolute left-1/2 transform -translate-x-1/2 space-x-6 text-gray-600">
  
       <a href="#" class="text-sm p-4 uppercase text-black">Shop</a>
