@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -23,6 +24,14 @@ Route::get('/product', function () {
 Route::get('/navbar', function () {
     return view('components.navbar');
 });
+
+Route::get('/register',[AuthController::class,'create'])->middleware('guest');
+Route::post('/register',[AuthController::class,'store'])->middleware('guest');
+
+Route::post('/logout',[AuthController::class,'logout'])->middleware('auth');
+
+Route::get('/login',[AuthController::class,'login'])->middleware('guest');
+Route::post('/login',[AuthController::class,'post_login'])->middleware('guest');
 
 
 
