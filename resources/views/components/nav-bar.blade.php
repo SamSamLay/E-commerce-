@@ -2,14 +2,16 @@
   <div class="navbar-start">
     <div class="dropdown  mb-5">
       <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
-      <a class="btn btn-ghost text-xl">Cozy<span class="text-xl">&reg;</span></a>
+            <div class="flex items-center ml-auto">
+                <a class="btn btn-ghost text-xl mr-10">Cozy<span class="text-xl">&reg;</span></a>
+            </div>
       
       </div>
       
     </div>
   </div>
   
-  <div class="navbar-center md:flex absolute left-1/2 transform -translate-x-1/2 space-x-6 text-gray-600">
+  <div class="flex-grow flex justify-center space-x-6 text-gray-600">
  
       <a href="#" class="text-sm p-4 uppercase text-black">Shop</a>
       <a href="#" class="text-sm p-4 uppercase text-black">Collective</a>
