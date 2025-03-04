@@ -1,9 +1,6 @@
 <?php
 
 namespace Database\Seeders;
-
-<<<<<<< HEAD
-=======
 use App\Models\Brand;
 use App\Models\Category;
 use App\Models\Order;
@@ -13,7 +10,6 @@ use App\Models\Product;
 use App\Models\ShoppingCart;
 use App\Models\ShoppingCartItem;
 use App\Models\Supplier;
->>>>>>> d322a2ee4fdfb8a01b0ce0e5a144bc76378cfd26
 use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
@@ -31,8 +27,7 @@ class DatabaseSeeder extends Seeder
             'name' => 'Test User',
             'email' => 'test@example.com',
         ]);
-<<<<<<< HEAD
-=======
+
 
         User::factory(10)->create();
         Category::factory(5)->create();
@@ -64,6 +59,6 @@ class DatabaseSeeder extends Seeder
         Order::all()->each(function ($order){
             OrderItem::factory()->create(['order_id'=>$order->id]);
         });
->>>>>>> d322a2ee4fdfb8a01b0ce0e5a144bc76378cfd26
+
     }
 }

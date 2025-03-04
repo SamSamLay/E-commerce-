@@ -27,14 +27,14 @@ Route::get('/product', function () {
 Route::get('/navbar', function () {
     return view('components.navbar');
 });
-
-Route::get('/register',[AuthController::class,'create'])->middleware('guest');
-Route::post('/register',[AuthController::class,'store'])->middleware('guest');
+//->middleware('guest') register login
+Route::get('/register',[AuthController::class,'create']);
+Route::post('/register',[AuthController::class,'store']);
 
 Route::post('/logout',[AuthController::class,'logout'])->middleware('auth');
 
-Route::get('/login',[AuthController::class,'login'])->middleware('guest');
-Route::post('/login',[AuthController::class,'post_login'])->middleware('guest');
+Route::get('/login',[AuthController::class,'login']);
+Route::post('/login',[AuthController::class,'post_login'])->name('post_login');
 
 
 
