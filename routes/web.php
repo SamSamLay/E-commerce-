@@ -1,16 +1,14 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-<<<<<<< HEAD
-=======
+
 use App\Http\Controllers\AuthController;
->>>>>>> d322a2ee4fdfb8a01b0ce0e5a144bc76378cfd26
+
 
 Route::get('/', function () {
     return view('welcome');
 });
-<<<<<<< HEAD
-=======
+
 Route::get('/cart', function () {
     return view('cart');
 });
@@ -41,4 +39,4 @@ Route::post('/login',[AuthController::class,'post_login'])->middleware('guest');
 
 
 
->>>>>>> d322a2ee4fdfb8a01b0ce0e5a144bc76378cfd26
+
