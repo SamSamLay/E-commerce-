@@ -1,12 +1,15 @@
 @vite(['resources/js/home.js'])
 <x-layout>
 <x-nav-bar />
+<<<<<<< HEAD
 @if (session('success'))
     
     <div class="text-center p-4 mb-4 text-sm text-green-800 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400" role="alert">
         <span class="font-medium">{{session('success')}}!</span> 
     </div>
 @endif
+=======
+>>>>>>> d322a2ee4fdfb8a01b0ce0e5a144bc76378cfd26
 
 <section class="py-8 antialiased md:py-12 bg-[url('/images/background.jpeg')] bg-auto bg-cover bg-center h-200 w-full">
   <div class="relative flex flex-col my-8 rounded-lg w-160 ml-auto pt-50 h-499">

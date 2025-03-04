@@ -75,7 +75,10 @@
         <span class="badge badge-xs badge-primary indicator-item"></span>
       </div>
     </button>
+<<<<<<< HEAD
     <!--<button type="button" class="focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Log out</button>-->
+=======
+>>>>>>> d322a2ee4fdfb8a01b0ce0e5a144bc76378cfd26
     
   </div>
 </div>

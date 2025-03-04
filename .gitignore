@@ -17,3 +17,9 @@ yarn-error.log
 /.fleet
 /.idea
 /.vscode
+<<<<<<< HEAD
+=======
+echo "vendor/">> .gitignore
+echo "node_modules/">> .gitignore
+echo ".env" >> .gitignore
+>>>>>>> d322a2ee4fdfb8a01b0ce0e5a144bc76378cfd26
