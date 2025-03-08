@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\OrderItemController;
 
 
 Route::get('/', function () {
@@ -35,6 +36,29 @@ Route::post('/logout',[AuthController::class,'logout'])->middleware('auth');
 
 Route::get('/login',[AuthController::class,'login']);
 Route::post('/login',[AuthController::class,'post_login'])->name('post_login');
+
+Route::get('/cart', function () {
+    return view('cart');
+});
+Route::get('/address', function () {
+    return view('address');
+});
+Route::get('/payment', function () {
+    return view('payment');
+});
+Route::get('/shipping', function () {
+    return view('shipping');
+});
+Route::get('/product', function () {
+    return view('product');
+});
+
+//testing
+Route::get('/testing', function () {
+    return view('testing');
+});
+
+Route::post('/testing/order', [OrderItemController::class, 'store']);
 
 
 
