@@ -26,7 +26,7 @@ class OrderItemController extends Controller
             'created_at' => now(),
             'updated_at' => now(),
         ]);
-        dd('success');
+        //dd('success');
         
 
         // Redirect after storing the order item
