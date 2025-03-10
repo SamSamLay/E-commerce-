@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\AuthController;
-use App\Http\Controllers\OrderItemController;
+use App\Http\Controllers\OrderController;
 
 
 Route::get('/', function () {
@@ -58,7 +58,7 @@ Route::get('/testing', function () {
     return view('testing');
 });
 
-Route::post('/testing/order', [OrderItemController::class, 'store']);
+Route::post('/testing/order', [OrderController::class, 'store']);
 
 
 

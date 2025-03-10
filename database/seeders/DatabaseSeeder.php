@@ -29,7 +29,7 @@ class DatabaseSeeder extends Seeder
         ]);
 
 
-        User::factory(10)->create();
+        User::factory(5)->create();
         Category::factory(5)->create();
         Brand::factory(3)->create();
         Supplier::factory(3)->create();

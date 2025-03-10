@@ -3,31 +3,35 @@
 
     <form action="/testing/order" method="POST">
         @csrf
+        <br>
+         <!-- Product 1 (Price $100) -->
+        <div class="inline-flex shadow-xs" role="group">
+            <button id="minusBtn1" type="button" class="px-4 py-2 text-lg font-medium text-gray-900 bg-white border border-gray-200 rounded-s-lg hover:bg-gray-100 hover:text-blue-700 ">
+            -
+            </button>
+            <span  id="textDisplay1" class="px-4 py-2 text-lg font-medium text-gray-900 bg-white border-t border-b border-gray-200">
+                0
+            </span>
+            <button id="plusBtn1" type="button" class="px-4 py-2 text-lg font-medium text-gray-900 bg-white border border-gray-200 rounded-e-lg hover:bg-gray-100 hover:text-blue-700">
+                +
+            </button>
+        </div><br><br>
 
-        <!-- Product 1 (Price $100) -->
-        <div class="flex items-center space-x-4">
-            <!-- Minus Button for Product 1 -->
-            <button type="button" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600" id="minusBtn1">-</button>
-
-            <!-- Quantity Display for Product 1 -->
-            <span id="textDisplay1" class="text-2xl">0</span>
-
-            <!-- Plus Button for Product 1 -->
-            <button type="button" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600" id="plusBtn1">+</button>
+         <!-- Product 2 (Price $200) -->
+        <div class="inline-flex shadow-xs" role="group">
+            <button id="minusBtn2" type="button" class="px-4 py-2 text-lg font-medium text-gray-900 bg-white border border-gray-200 rounded-s-lg hover:bg-gray-100 hover:text-blue-700 ">
+            -
+            </button>
+            <span  id="textDisplay2" class="px-4 py-2 text-lg font-medium text-gray-900 bg-white border-t border-b border-gray-200">
+                0
+            </span>
+            <button id="plusBtn2" type="button" class="px-4 py-2 text-lg font-medium text-gray-900 bg-white border border-gray-200 rounded-e-lg hover:bg-gray-100 hover:text-blue-700">
+                +
+            </button>
         </div>
-        <br><br>
 
-        <!-- Product 2 (Price $200) -->
-        <div class="flex items-center space-x-4">
-            <!-- Minus Button for Product 2 -->
-            <button type="button" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600" id="minusBtn2">-</button>
-
-            <!-- Quantity Display for Product 2 -->
-            <span id="textDisplay2" class="text-2xl">0</span>
-
-            <!-- Plus Button for Product 2 -->
-            <button type="button" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600" id="plusBtn2">+</button>
-        </div>
+       
+        
 
         <br><br>
 
