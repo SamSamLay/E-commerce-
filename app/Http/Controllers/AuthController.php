@@ -18,6 +18,8 @@ class AuthController extends Controller
         //dd(request()->all());
         $formData = request()->validate([
             'name'=>'required|max:255|min:3',
+            'phone'=>'required|max:255|min:9',
+            'address'=>'required|max:255',
             'username'=> ['required','max:255','min:3',Rule::unique('users','username')],
             'email'=> ['required','email',Rule::unique('users','email')], //or ['required','email']
             'password'=> 'required|min:8'
