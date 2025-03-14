@@ -8,6 +8,7 @@ use Illuminate\Validation\Rule;
 
 class AuthController extends Controller
 {
+
     //dd('hit');
     public function create(){
         
@@ -64,4 +65,7 @@ class AuthController extends Controller
     }
    
     }
+
+    
+
 }

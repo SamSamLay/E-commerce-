@@ -1,3 +1,4 @@
+@vite(['resources/js/cart.js'])
 <x-layout>
   <x-nav-bar />
 <div class="w-[1440px] h-[900px] relative bg-white overflow-hidden">
@@ -54,14 +55,14 @@
           <!--button +--->
           <div class="h-[52px] p-4 left-[196px] top-[98px] absolute rounded justify-start items-center inline-flex">
             
-            <button id="minusBtn1" type="button" class="px-4 py-2 text-lg font-medium text-gray-900 bg-white border border-gray-200 rounded-s-lg hover:bg-gray-100 hover:text-blue-700 ">
+            <button id="minusBtn2" type="button" class="px-4 py-2 text-lg font-medium text-gray-900 bg-white border border-gray-200 rounded-s-lg hover:bg-gray-100 hover:text-blue-700 ">
             -
             </button>
-            <span  id="textDisplay1" class="px-4 py-2 text-lg font-medium text-gray-900 bg-white border-t border-b border-gray-200">
+            <span  id="textDisplay2" class="px-4 py-2 text-lg font-medium text-gray-900 bg-white border-t border-b border-gray-200">
                 0
             </span>
             
-            <button id="plusBtn1" type="button" class="px-4 py-2 text-lg font-medium text-gray-900 bg-white border border-gray-200 rounded-e-lg hover:bg-gray-100 hover:text-blue-700">
+            <button id="plusBtn2" type="button" class="px-4 py-2 text-lg font-medium text-gray-900 bg-white border border-gray-200 rounded-e-lg hover:bg-gray-100 hover:text-blue-700">
                 +
             </button>
             
@@ -75,6 +76,7 @@
   </div>
   <div class="left-[80px] top-[153px] absolute text-[#17183b] text-[32px] font-bold font-['Proxima Nova'] leading-[44px]">Cart</div>
   <div class="left-[166px] top-[167px] absolute text-[#a2a3b1] text-xl font-semibold font-['Proxima Nova'] leading-normal">2 ITEMS</div>
+  
  
 </div>
   </form>

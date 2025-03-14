@@ -18,6 +18,35 @@
       <a href="#" class="text-sm p-4 uppercase text-black">Designers</a>
       <a href="#" class="text-sm p-4 uppercase text-black">About Us</a>
       <a href="#" class="text-sm p-4 uppercase text-black">Contact</a>
+      @guest
+            <a 
+              href="/register" 
+              class="text-sm p-4 uppercase text-black"
+            >Register</a>
+            <a 
+              href="/login" 
+              class="text-sm p-4 uppercase text-black"
+            >Login</a>
+          @else
+           
+            <a 
+              href="" 
+              class="text-sm p-4 uppercase text-black"
+            >Welcome {{auth()->user()->name}}</a>
+            <form 
+            action="/logout"
+            method="POST"
+          >
+          @csrf
+            <button
+                type="submit"
+                href=""
+                class="btn btn-link text-sm p-4 uppercase text-black"
+            >Logout</button>
+          </form>
+           
+          @endguest
+
     
   </div>
   
