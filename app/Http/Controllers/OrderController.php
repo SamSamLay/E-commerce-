@@ -4,9 +4,15 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Order;
+use App\Models\Product;
 
 class OrderController extends Controller
 {
+    public function index()
+{
+    $products = Product::all(); // Fetch all products from the database
+    return view('products.index', compact('products')); // Pass the products to the view
+}
     //
     public function store()
     {

@@ -88,6 +88,9 @@
         <input type="hidden" name="quantity2" id="quantity2Input" value="0">
     </form>
 
+    @foreach ($products as $product)
+    <img src='{{ asset("storage/$product->image") }}' alt="Syltherine">
+    @endforeach
     
 
 
