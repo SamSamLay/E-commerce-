@@ -16,7 +16,7 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 class ProductResource extends Resource
 {
     protected static ?string $model = Product::class;
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-o-shopping-bag';
     protected static ?string $navigationLabel = 'Products';
     protected static ?string $pluralModelLabel = 'Products';
 
@@ -37,6 +37,14 @@ class ProductResource extends Resource
                 ->required()
                 ->relationship('category','category_name')
                 ->label('Category'),
+            Forms\Components\Select::make('brand_id')
+                ->required()
+                ->relationship('brand','brand_name')
+                ->label('Brand'),
+            Forms\Components\Select::make('supplier_id')
+                ->required()
+                ->relationship('supplier','supplier_name')
+                ->label('Supplier'),
             Forms\Components\FileUpload::make('image')
                 ->image()
                 ->nullable()
@@ -51,6 +59,8 @@ class ProductResource extends Resource
             Tables\Columns\TextColumn::make('price')->sortable(),
             Tables\Columns\TextColumn::make('created_at')->sortable(),
             Tables\Columns\TextColumn::make('category_name')->label('Category')->sortable(),
+            Tables\Columns\TextColumn::make('brand_name')->label('Brand')->sortable(),
+            Tables\Columns\TextColumn::make('supplier_name')->label('Supplier')->sortable(),
         ]);
     }
 
