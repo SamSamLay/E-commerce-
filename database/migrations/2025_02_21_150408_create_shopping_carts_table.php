@@ -14,12 +14,15 @@ return new class extends Migration
         
            if(!Schema::hasTable('shopping_carts')){
             Schema::create('shopping_carts', function (Blueprint $table) {
-                $table->id();
-                $table->id('shopping_cart_id');
+                $table->id();  // This creates an auto-incrementing primary key called 'id'
+                $table->bigInteger('shopping_cart_id')->unsigned();  // No auto-increment here
                 $table->integer('quantity');
-                $table->foreignId('product_id')->constrained()->onDelete('cascade');
-                $table->foreignId('user_id')->constrained()->onDelete('cascade');
+                $table->bigInteger('product_id')->unsigned();
+                $table->bigInteger('user_id')->unsigned();
                 $table->timestamps();
+            
+                // If 'shopping_cart_id' is meant to be unique, you can make it a unique key
+                $table->unique('shopping_cart_id');
             });
            }
        
