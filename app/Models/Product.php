@@ -12,6 +12,28 @@ class Product extends Model
 
     protected $guarded;
 
+    protected $with = ['category','brand','supplier','orderItems'];//Eager Loading
+
+    public function scopeFilter($query,$filter){
+      
+        $query->when($filter['category']??false,function($query,$slug){
+            //dd($slug);
+            $query->whereHas('category',function($query) use ($slug){
+                $query->where('slug',$slug);//slug is column name
+            });
+                        
+        });
+
+        $query->when($filter['username']??false,function($query,$username){
+            //dd($slug);
+            $query->whereHas('author',function($query) use ($username){
+                $query->where('username',$username);//slug is column name
+            });
+                        
+        });
+
+    }
+
     public function category(){
         return $this->belongsTo(Category::class);
     }

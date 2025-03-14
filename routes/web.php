@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\OrderController;
+use App\Http\Controllers\ProductController;
 
 Route::get('/', function () {return view('welcome');});
 
@@ -41,6 +42,8 @@ Route::get('/product', function () {
 Route::get('/testing', function () {
     return view('testing');
 });
+
+Route::get('/test',[ProductController::class,'index']);
 
 Route::post('/testing/order', [OrderController::class, 'store']);
 

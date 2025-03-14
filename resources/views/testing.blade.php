@@ -86,11 +86,20 @@
         <!-- Hidden input to store quantities -->
         <input type="hidden" name="quantity1" id="quantity1Input" value="0">
         <input type="hidden" name="quantity2" id="quantity2Input" value="0">
+
+        @foreach ($products as $product)
+    <div>
+        <h2>{{ $product->product_name }}</h2>
+        <p>Price: ${{ $product->price }}</p>
+        <!-- Display the image directly from the storage folder -->
+        <img src="{{ asset('storage/images/' . $product->image) }}" alt="{{ $product->product_name }}" width="200">
+    </div>
+@endforeach
+
+
     </form>
 
-    @foreach ($products as $product)
-    <img src='{{ asset("storage/$product->image") }}' alt="Syltherine">
-    @endforeach
+   
     
 
 
