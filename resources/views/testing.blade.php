@@ -91,10 +91,11 @@
     <div>
         <h2>{{ $product->product_name }}</h2>
         <p>Price: ${{ $product->price }}</p>
-        <!-- Display the image directly from the storage folder -->
+        <!-- Display the image -->
         <img src="{{ asset('storage/images/' . $product->image) }}" alt="{{ $product->product_name }}" width="200">
     </div>
 @endforeach
+
 
 
     </form>
