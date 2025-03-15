@@ -10,23 +10,7 @@
 @endif
 
 
-<section class="py-8 antialiased md:py-12 bg-[url('/images/background.jpeg')] bg-auto bg-cover bg-center h-200 w-full">
-  <div class="relative flex flex-col my-8 rounded-lg w-160 ml-auto pt-50 h-499">
-    <div class="p-4 bg-teal-50">
-      <p class="btn btn-ghost text-xl">New Arrival</p>
-      <h2 class="mb-2 text-4xl font-semibold text-green-700">
-        Discover Our <br>New Collection
-      </h2>
-      <p class="text-slate-600 leading-normal font-light">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.
-      </p>
-      <br>
-      <button type="button" class="focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
-        Buy Now
-      </button>
-    </div>
-  </div>
-</section><br><br>
+<x-hero />
 
 <h2 class="mb-2 text-xl font-semibold text-center">
 Browse The Range
