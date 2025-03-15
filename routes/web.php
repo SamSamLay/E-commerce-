@@ -5,8 +5,14 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\BlogController;
+use App\Models\Product;
 
-Route::get('/', function () {return view('welcome');});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Route::get('/', [ProductController::class, 'index']);
 
 //->middleware('guest') register login
 Route::get('/register',[AuthController::class,'create'])->middleware('guest');

@@ -19,7 +19,21 @@ Browse The Range
 <p class="text-xl text-center">Lorem ipsum dolor sit amet, .</p><br><br>
 
 <x-carousel />
-<x-product />
+
+<section class="py-8 antialiased dark:bg-gray-900 md:py-12">
+    <h2 class="mb-2 text-xl font-semibold text-center">
+        Our Products
+    </h2><br>
+
+    <div class="mx-auto max-w-screen-xl px-4 2xl:px-0">
+        <div class="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            @foreach ($products as $product)
+                <x-product :product="$product"/>
+            @endforeach
+        </div>
+    </div>
+</section>
+
 <div class="flex justify-center">
     <button type="button" class="px-4 py-1 border-2 border-green-500 text-green-500 rounded-lg hover:bg-green-700 hover:text-white transition">Show More</button>
 </div><br><br>
@@ -106,6 +120,9 @@ Browse The Range
 
 <!-- Gray Divider Before Footer -->
 <div class="border-t border-gray-300 w-full"></div>
+
+
+
 
 <!-- Footer Section -->
 <footer class="bg-white text-black py-20 w-full">
