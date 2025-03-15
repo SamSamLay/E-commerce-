@@ -24,8 +24,14 @@ class SupplierResource extends Resource
         return $form
         ->schema([
             Forms\Components\TextInput::make('supplier_name')
-            ->required()
-            ->unique(),
+                ->required()
+                ->unique(),
+            Forms\Components\Textarea::make('supplier_phone')
+                ->required()
+                ->label('Phone'),
+            Forms\Components\Textarea::make('supplier_email')
+                ->required()
+                ->label('Email'),
         ]);
     }
 
@@ -34,12 +40,17 @@ class SupplierResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('supplier_name')->sortable()->searchable(),
+                Tables\Columns\TextColumn::make('supplier_phone')->sortable(),
+                Tables\Columns\TextColumn::make('supplier_email')->sortable(),
             ])
             ->filters([
                 //
             ])
             ->actions([
                 Tables\Actions\EditAction::make(),
+                Tables\Actions\DeleteAction::make(),
+            Tables\Actions\ForceDeleteAction::make(),
+            Tables\Actions\RestoreAction::make(),
             ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([

@@ -57,11 +57,21 @@ class ProductResource extends Resource
         return $table->columns([
             Tables\Columns\TextColumn::make('name')->sortable()->searchable(),
             Tables\Columns\TextColumn::make('price')->sortable(),
-            Tables\Columns\TextColumn::make('created_at')->sortable(),
-            Tables\Columns\TextColumn::make('category_name')->label('Category')->sortable(),
-            Tables\Columns\TextColumn::make('brand_name')->label('Brand')->sortable(),
-            Tables\Columns\TextColumn::make('supplier_name')->label('Supplier')->sortable(),
-        ]);
+            Tables\Columns\TextColumn::make('category.category_name')->label('Category')->sortable(),
+            Tables\Columns\TextColumn::make('brand.brand_name')->sortable(),
+            Tables\Columns\TextColumn::make('supplier.supplier_name')->sortable(),
+        ])
+        ->actions([
+            // You may add these actions to your table if you're using a simple
+            // resource, or you just want to be able to delete records without
+            // leaving the table.
+            Tables\Actions\EditAction::make(),
+            Tables\Actions\DeleteAction::make(),
+            Tables\Actions\ForceDeleteAction::make(),
+            Tables\Actions\RestoreAction::make(),
+            // ...
+        ])
+        ;
     }
 
     public static function getPages(): array
