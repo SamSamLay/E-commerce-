@@ -3,9 +3,9 @@
   style="background-image: url('/images/background.jpeg');"
 >
 
-  <div class="flex justify-end mt-[200px]">
+  <div class="flex justify-end mt-[100px]">
 
-  <div class="relative flex flex-col  mt-[100px] rounded-xl w-[40rem] ml-auto p-6 h-[500px] border border-gray-200 shadow-lg bg-white">
+  <div class="relative flex flex-col  mt-[100px] rounded-xl w-[40rem] ml-auto p-6 h-[300px] border border-gray-200 shadow-lg bg-white">
 
         <p class="btn btn-ghost text-xl">New Arrival</p>
         <h2 class="mb-2 text-4xl font-semibold text-green-700">

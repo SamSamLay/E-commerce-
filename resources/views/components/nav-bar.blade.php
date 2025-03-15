@@ -13,7 +13,7 @@
   
   <div class="flex-grow flex justify-center space-x-6 text-gray-600">
  
-      <a href="#" class="text-sm p-4 uppercase text-black">Shop</a>
+      <a href="/" class="text-sm p-4 uppercase text-black">Shop</a>
       <a href="#" class="text-sm p-4 uppercase text-black">Collective</a>
       <a href="#" class="text-sm p-4 uppercase text-black">Designers</a>
       <a href="#" class="text-sm p-4 uppercase text-black">About Us</a>
