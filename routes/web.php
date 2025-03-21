@@ -8,10 +8,6 @@ use App\Http\Controllers\ProductController;
 use App\Http\Controllers\BlogController;
 use App\Models\Product;
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-
 Route::get('/', [ProductController::class, 'index']);
 
 //->middleware('guest') register login
@@ -30,6 +26,9 @@ Route::get('/cart', function () {
     }
     return view('cart');
 });
+
+Route::get('/cart/{slug}', [ProductController::class, 'show']);
+
 
 Route::get('/address', function () {
     return view('address');
