@@ -41,7 +41,7 @@
           </div>
           
           
-          <div class="left-[745px] top-[10px] absolute text-right text-[#17183b] text-xl font-semibold font-['Proxima Nova'] leading-normal tracking-tight">$149.99</div>
+          <div class="left-[745px] top-[10px] absolute text-right text-[#17183b] text-xl font-semibold font-['Proxima Nova'] leading-normal tracking-tight" id="product1Price">${{ $product->price }}</div>
           <div class="left-[248px] top-[50px] absolute text-[#17183b] text-base font-semibold font-['Proxima Nova'] leading-tight tracking-tight">Gunnared biege</div>
           <div class="left-[196px] top-[50px] absolute text-[#a2a3b1] text-base font-semibold font-['Proxima Nova'] leading-tight tracking-tight">Color</div>
           <div class="left-[196px] top-[10px] absolute text-[#17183b] text-xl font-semibold font-['Proxima Nova'] leading-normal">Osmond Armchair</div>
@@ -69,7 +69,7 @@
             
         </div>
    
-    <div class="left-[745px] top-[10px] absolute text-right text-[#17183b] text-xl font-semibold font-['Proxima Nova'] leading-normal tracking-tight">$169.99</div>
+    <div class="left-[745px] top-[10px] absolute text-right text-[#17183b] text-xl font-semibold font-['Proxima Nova'] leading-normal tracking-tight" id="product2Price">${{ $product->price }}</div>
     <div class="left-[248px] top-[50px] absolute text-[#17183b] text-base font-semibold font-['Proxima Nova'] leading-tight tracking-tight">Lysed bright green</div>
     <div class="left-[196px] top-[50px] absolute text-[#a2a3b1] text-base font-semibold font-['Proxima Nova'] leading-tight tracking-tight">Color</div>
     <div class="left-[196px] top-[10px] absolute text-[#17183b] text-xl font-semibold font-['Proxima Nova'] leading-normal">Meryl Lounge Chair</div>
@@ -89,3 +89,5 @@
 
 
 </x-layout>
+
+```

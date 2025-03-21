@@ -1,7 +1,13 @@
 
-    // Prices for Product 1 and Product 2
-    const product1Price = 100; // Product 1 price
-    const product2Price = 200; // Product 2 price
+// Prices for Product 1 and Product 2
+    // = 100; // Product 1 price
+    
+
+    const product1PriceText = document.getElementById("product1Price").textContent;
+    const product1Price = parseInt(product1PriceText.replace('$', '').trim(), 10);
+
+    const product2PriceText = document.getElementById("product2Price").textContent;
+    const product2Price = parseInt(product2PriceText.replace('$', '').trim(), 10);
 
     // Initial quantities
     let quantity1 = 0;
