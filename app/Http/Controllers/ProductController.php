@@ -18,7 +18,9 @@ class ProductController extends Controller
      public function show($slug)
 {
     $product = Product::where('name', $slug)->firstOrFail(); // fetch by slug
-    return view('cart');
+    //return view('cart', compact('product'));//pass the product with compact
+    return view('cart')->with('product', $product);
+
 }
 
      
