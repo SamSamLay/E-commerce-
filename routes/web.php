@@ -44,14 +44,8 @@ Route::get('/product', function () {
     return view('product');
 });
 
-//testing
-Route::get('/testing', function () {
-    return view('testing');
-});
 
-Route::get('/test',[ProductController::class,'index']);
-
-Route::post('/testing/order', [OrderController::class, 'store']);
+Route::post('/cart/{slug}', [OrderController::class, 'store']);
 
 
 

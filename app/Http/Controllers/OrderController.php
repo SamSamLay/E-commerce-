@@ -22,7 +22,7 @@ class OrderController extends Controller
         // Create the OrderItem with the passed or default quantity  'body'=>
         Order::create([
             'total_price' => request('totalPrice'), 
-            'user_id' => 2, // Example: hardcoded to 1 for now
+            'user_id' => auth()->id(), // Example: hardcoded to 1 for now
             'payment_id'=>1,
             'status'=>'pending',
             'created_at' => now(),
@@ -32,6 +32,6 @@ class OrderController extends Controller
         
 
         // Redirect after storing the order item
-        return redirect('/testing');
+        return redirect('/');
     }
 }

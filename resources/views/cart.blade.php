@@ -13,13 +13,14 @@
     </div>
     <div class="text-[#17183b] text-base font-normal font-['Proxima Nova'] leading-normal">10% Instant Discount with Federal Bank Debit Cards on a min spend of $150. TCA</div>
   </div>
-  <x-order-summary />
+
 
 
   
   <!--Count data -->
-  <form method="POST" action="">
-  @csrf 
+  <form action="/cart/{slug}" method="POST">
+        @csrf
+        <x-order-summary />
         <div class="w-[820px] h-40 left-[80px] top-[257px] absolute inline-flex shadow-xs" role="group">
           <!--button +--->
           <div class="h-[52px] p-4 left-[196px] top-[98px] absolute rounded justify-start items-center inline-flex">
