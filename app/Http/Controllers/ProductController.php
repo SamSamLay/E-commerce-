@@ -14,7 +14,13 @@ class ProductController extends Controller
 
              'products' => Product::all()
         ]);
-     }
+    }
+
+    public function product() {
+        
+        return view('product');
+    }
+
      public function show($slug)
 {
     $product = Product::where('name', $slug)->firstOrFail(); // fetch by slug

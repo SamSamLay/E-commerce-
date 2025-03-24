@@ -40,12 +40,14 @@ Route::get('/payment', function () {
 Route::get('/shipping', function () {
     return view('shipping');
 });
-Route::get('/product', function () {
-    return view('product');
+Route::get('/product', [ProductController::class, 'product']);
+
+
+Route::get('/testing', function () {
+    return view('testing');
 });
 
-
-Route::post('/cart/{slug}', [OrderController::class, 'store']);
+//Route::post('/cart/{slug}', [OrderController::class, 'store']);
 
 
 
