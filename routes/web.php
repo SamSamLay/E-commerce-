@@ -40,8 +40,9 @@ Route::get('/payment', function () {
 Route::get('/shipping', function () {
     return view('shipping');
 });
-Route::get('/product', [ProductController::class, 'product']);
 
+
+Route::get('/product/{slug}', [ProductController::class, 'product']);
 
 Route::get('/testing', function () {
     return view('testing');

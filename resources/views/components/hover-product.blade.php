@@ -9,9 +9,9 @@
     </button>
 
     <div class="second-row">
-        <a href="/cart/{{ $product->name }}"><button class="btn text-white"><i class="fas fa-share text-white"></i> Share</button></a>
-        <a href="/cart/{{ $product->name }}"><button class="btn text-white"><i class="fas fa-exchange-alt text-white"></i> Compare</button></a>
-        <a href="/cart/{{ $product->name }}"><button class="btn text-white"><i class="fas fa-heart text-white"></i> Like</button></a>
+        <a href="/product/{{ $product->name }}"><button class="btn text-white"><i class="fas fa-share text-white"></i> Share</button></a>
+        <a href="/product/{{ $product->name }}"><button class="btn text-white"><i class="fa fa-info-circle text-white"></i> Info</button></a>
+        <a href="/product/{{ $product->name }}"><button class="btn text-white"><i class="fas fa-heart text-white"></i> Like</button></a>
     </div>
 </div>
 
@@ -53,7 +53,8 @@
     }
 
     document.getElementById('confirmBtn').addEventListener('click', function () {
-        window.location.href = `/cart/${selectedProduct}`;
+        //window.location.href = `/cart/${selectedProduct}`;
+        window.location.href = `/`;
     });
 </script>
 

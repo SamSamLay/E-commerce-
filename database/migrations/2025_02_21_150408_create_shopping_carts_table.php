@@ -15,9 +15,6 @@ return new class extends Migration
            if(!Schema::hasTable('shopping_carts')){
             Schema::create('shopping_carts', function (Blueprint $table) {
                 $table->id();  // This creates an auto-incrementing primary key called 'id'
-                $table->bigInteger('shopping_cart_id')->unsigned();  // No auto-increment here
-                $table->integer('quantity');
-                $table->bigInteger('product_id')->unsigned();
                 $table->bigInteger('user_id')->unsigned();
                 $table->timestamps();
             

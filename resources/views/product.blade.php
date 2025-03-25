@@ -1,54 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meryl Lounge Chair</title>
+@props(['product'])
+<x-layout>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.jsdelivr.net/npm/daisyui@1.19.0/dist/full.js"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-</head>
-<body class="bg-gray-50 h-screen flex flex-col">
 
-  <!-- ✅ Navbar (Matches UI) -->
-  <div class="w-full flex justify-between items-center px-8 py-6 bg-white shadow-md fixed top-0 left-0 z-50">
-    <!-- Left: Logo -->
-    <h1 class="text-2xl font-semibold text-gray-900">Cozy</h1>
+  <x-nav-bar />
+<div class="bg-gray-50 h-screen flex flex-col">
 
-    <!-- Center: Navigation Links -->
-    <div class="hidden md:flex absolute left-1/2 transform -translate-x-1/2 space-x-6 text-gray-600">
-      <a href="#" class="hover:text-gray-900">Shop</a>
-      <a href="#" class="hover:text-gray-900">Collective</a>
-      <a href="#" class="hover:text-gray-900">About Us</a>
-      <a href="#" class="hover:text-gray-900">Contact</a>
-    </div>
-
-    <!-- Right: Icons (Search & Cart) -->
-    <div class="flex space-x-4">
-      <span class="material-icons text-gray-600 cursor-pointer">search</span>
-      <span class="material-icons text-gray-600 cursor-pointer">shopping_cart</span>
-    </div>
-  </div>
 
   <div class="flex flex-col md:flex-row flex-1 px-8 py-20 bg-white w-full h-full">
     <!-- Left: Product Details -->
     <div class="md:w-1/2 flex flex-col space-y-12 justify-center">
+
       <!-- ✅ Breadcrumb Navigation (Arrow with Chair / Meryl Lounge Chair Below) -->
       <div class="flex flex-col text-gray-600">
         <span class="material-icons cursor-pointer">arrow_back</span>
         <div class="flex space-x-5 mt-5">
-          <span class="hover:text-blue-600 cursor-pointer">Chair</span>
+          <span class="hover:text-blue-600 cursor-pointer">{{ $product->description }}</span>
           <span>/</span>
-          <span class="hover:text-blue-600 cursor-pointer font-bold">Meryl Lounge Chair</span>
+          <span class="hover:text-blue-600 cursor-pointer font-bold">{{ $product->name }}</span>
         </div>
       </div>
 
       <!-- Product Title -->
-      <h2 class="text-5xl font-semibold text-gray-900">Meryl Lounge Chair</h2>
+      <h2 class="text-5xl font-semibold text-gray-900">{{ $product->name }}</h2>
 
       <!-- ✅ Increased Space Between Price & Rating for Proper Alignment -->
       <div class="flex items-center space-x-44 mt-4"> <!-- Adjusted spacing -->
-        <p class="text-2xl font-bold text-gray-900">$149.99</p>
+        <p class="text-2xl font-bold text-gray-900">${{ $product->price }}</p>
         <div class="flex items-center space-x-2">
           <span class="text-yellow-500 text-lg">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
           <span class="text-sm text-gray-500">(4.6 / 5.0) (556)</span>
@@ -122,21 +101,22 @@
         <div id="image-placeholder" class="absolute inset-0 bg-gray-500 animate-pulse rounded-lg"></div>
 
         <!-- ✅ Enlarged Main Image (Carousel) -->
-        <img id="mainImage" src="./images/Meryl_chair_1.jpeg" alt="Meryl Lounge Chair"
-            class="rounded-lg shadow-lg w-full opacity-0 transition-opacity duration-500" onload="removePlaceholder()">
+        
+        <img id="mainImage" src="{{ asset('storage/' . $product->image) }}" alt="Product Image"
+            class="rounded-lg shadow-lg w-full  h-[500px] opacity-0 transition-opacity duration-500" onload="removePlaceholder()">
     </div>
 
     <!-- ✅ Enlarged Image Thumbnails with Proper Spacing & Border -->
     <div class="flex space-x-6 mt-4">
-        <img src="./images/Meryl_chair_1.jpeg" alt="Thumbnail 1" class="w-28 h-28 object-cover rounded-md cursor-pointer border-4 border-gray-300 hover:border-gray-500"
+        <img src="{{ asset('images/Meryl_chair_1.jpeg') }}" alt="Thumbnail 1" class="w-28 h-28 object-cover rounded-md cursor-pointer border-4 border-gray-300 hover:border-gray-500"
             onclick="updateMainImage(0, this)" id="thumb-0">
-        <img src="./images/Meryl_chair_2.jpeg" alt="Thumbnail 2" class="w-28 h-28 object-cover rounded-md cursor-pointer border-4 border-gray-300 hover:border-gray-500"
+        <img src="{{ asset('images/Meryl_chair_2.jpeg') }}" alt="Thumbnail 2" class="w-28 h-28 object-cover rounded-md cursor-pointer border-4 border-gray-300 hover:border-gray-500"
             onclick="updateMainImage(1, this)" id="thumb-1">
-        <img src="./images//Meryl_chair_3.jpeg" alt="Thumbnail 3" class="w-28 h-2284 object-cover rounded-md cursor-pointer border-4 border-gray-300 hover:border-gray-500"
+        <img src="{{ asset('images/Meryl_chair_3.jpeg') }}" alt="Thumbnail 3" class="w-28 h-2284 object-cover rounded-md cursor-pointer border-4 border-gray-300 hover:border-gray-500"
             onclick="updateMainImage(2, this)" id="thumb-2">
-        <img src="./images/Meryl_chair_4.jpeg" alt="Thumbnail 4" class="w-28 h-28 object-cover rounded-md cursor-pointer border-4 border-gray-300 hover:border-gray-500"
+        <img src="{{ asset('images/Meryl_chair_4.jpeg') }}" alt="Thumbnail 4" class="w-28 h-28 object-cover rounded-md cursor-pointer border-4 border-gray-300 hover:border-gray-500"
             onclick="updateMainImage(3, this)" id="thumb-3">
-        <img src="./images/Meryl_chair_5.png" alt="Thumbnail 5" class="w-28 h-28 object-cover rounded-md cursor-pointer border-4 border-gray-300 hover:border-gray-500"
+        <img src="{{ asset('images/Meryl_chair_5.png') }}" alt="Thumbnail 5" class="w-28 h-28 object-cover rounded-md cursor-pointer border-4 border-gray-300 hover:border-gray-500"
             onclick="updateMainImage(4, this)" id="thumb-4">
     </div>
 </div>
@@ -221,5 +201,5 @@
 
   
 
-</body>
-</html>
+  </div>
+  </x-layout>
