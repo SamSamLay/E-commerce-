@@ -1,9 +1,8 @@
 @props(['product'])
-<form action="/cart/{slug}" method="POST">
-@csrf
+
 <div class="button-group">
     <button 
-        onclick="openPopup('{{ $product->name }}')" 
+    onclick="openPopup('{{ $product->name }}')"  
         class="btn border-2 text-green-500 bg-white border-green-500 px-8 py-1"
     >
         Add to cart
@@ -23,7 +22,13 @@
     <div class="bg-white rounded-lg shadow-lg p-6 text-center w-80">
         <p class="text-lg font-semibold mb-4">Add to cart?</p>
         <div class="flex justify-around">
+        <form action="/add-to-cart" method="POST">
+            @csrf
+            <input type="hidden" name="product_id" value="{{ $product->id }}">
+            
             <button 
+                type="submit"
+                onclick="addToCart({{ $product->id }})"
                 id="confirmBtn"
                 class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600"
             >
@@ -35,11 +40,12 @@
             >
                 No
             </button>
+        </form>
         </div>
     </div>
 </div>
 </div>
-</form>
+
 
 <script>
     let selectedProduct = '';
@@ -59,5 +65,8 @@
         window.location.href = `/`;
     });
 </script>
+
+
+
 
 <!--<a href="/product/{{ $product->slug }}">-->

@@ -1,3 +1,4 @@
+@vite(['resources/js/cart.js'])
 @props(['product'])
 <x-layout>
   <script src="https://cdn.tailwindcss.com"></script>
@@ -39,11 +40,14 @@
 
       <!-- Quantity & Add to Cart (Now Aligned with Description) -->
       <div class="flex items-center space-x-5 w-[75%]"> <!-- Same width as description -->
+        
         <div class="border border-gray-300 rounded-md flex items-center p-2">
           <button class="text-xl text-gray-600 px-4">-</button>
           <input type="number" value="1" class="w-12 text-center border-none outline-none">
           <button class="text-xl text-gray-600 px-3">+</button>
         </div>
+
+        
         <button class="py-2 px-10 bg-blue-600 text-white rounded-lg hover:bg-blue-700">Add to Cart</button>
       </div>
 

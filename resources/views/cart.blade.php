@@ -29,7 +29,6 @@
             -
             </button>
            
-
             <!--1-->
             <span  id="textDisplay1" class="px-4 py-2 text-lg font-medium text-gray-900 bg-white border-t border-b border-gray-200">
                 0
