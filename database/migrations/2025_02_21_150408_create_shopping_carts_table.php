@@ -12,16 +12,15 @@ return new class extends Migration
     public function up(): void
     {
         
-           if(!Schema::hasTable('shopping_carts')){
+        if (!Schema::hasTable('shopping_carts')) {
             Schema::create('shopping_carts', function (Blueprint $table) {
-                $table->id();  // This creates an auto-incrementing primary key called 'id'
-                $table->bigInteger('user_id')->unsigned();
+                $table->id();  
+                $table->foreignId('user_id')->constrained()->onDelete('cascade');
+                $table->foreignId('product_id')->constrained()->onDelete('cascade'); // Links to 'products' table
+                $table->integer('quantity')->default(1); // Default quantity is 1
                 $table->timestamps();
-            
-                // If 'shopping_cart_id' is meant to be unique, you can make it a unique key
-                $table->unique('shopping_cart_id');
             });
-           }
+        }
        
     }
 

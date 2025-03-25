@@ -1,5 +1,6 @@
 @props(['product'])
-
+<form action="/cart/{slug}" method="POST">
+@csrf
 <div class="button-group">
     <button 
         onclick="openPopup('{{ $product->name }}')" 
@@ -38,6 +39,7 @@
     </div>
 </div>
 </div>
+</form>
 
 <script>
     let selectedProduct = '';
